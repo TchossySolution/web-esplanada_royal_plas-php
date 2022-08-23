@@ -1,0 +1,165 @@
+header {
+  width: 100vw;
+  padding: 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 0.4s;
+}
+
+header.sticky {
+  background-color: #fff;
+  box-shadow: #6767674e 1px -10px 26px 1px;
+}
+header.sticky a.pagesLink {
+  font-weight: 500;
+  color: #111;
+}
+
+.desaparecer {
+  display: none;
+}
+
+.container-conteudo-header-topo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4rem 2rem 4rem;
+  color: white;
+  font-size: 12px;
+}
+.container-conteudo-header-topo-none {
+  display: none;
+}
+
+#conteudo2-topo {
+  display: flex;
+  gap: 1rem;
+}
+
+.container-navegacao {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4rem;
+  align-items: center;
+}
+
+ul.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-weight: bold;
+}
+
+.pagesLinkBlack {
+  color: #111;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+header a.stick {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+#logotipo {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.cor-primaria {
+  color: var(--cor-primaria);
+  transition: all 0.3s;
+}
+
+nav.show .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.show ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  font-size: 18px;
+  font-weight: bold;
+  visibility: visible;
+}
+
+header nav ul li {
+  position: relative;
+}
+
+header nav ul li a:hover {
+  color: var(--cor-primaria);
+}
+
+header nav ul li a:hover::after {
+  content: '';
+  width: 100%;
+  height: 1.4px;
+  position: absolute;
+  left: 0;
+  bottom: -0.8rem;
+  background-color: var(--cor-primaria);
+  transition: all 0.2s;
+}
+
+#botao-reserva {
+  padding: 0.8rem 1.7rem;
+  border: none;
+  background-color: var(--cor-primaria);
+}
+
+#botao-reserva a {
+  font-weight: bold;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+#icone-open-menu {
+  display: none;
+}
+
+#icone-close-menu {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  font-size: 30px;
+  display: none;
+}
+
+nav.show #icone-close-menu {
+  display: block;
+}
+
+/* Adaptando o header*/
+
+@media (max-width: 1150px) {
+  ul.menu {
+    display: none;
+  }
+
+  #icone-open-menu {
+    display: block;
+    color: var(--cor-primaria);
+  }
+}

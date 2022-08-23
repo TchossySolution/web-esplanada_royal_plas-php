@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+/* main*/
+#container-img-cabecalho {
+  position: relative;
+  height: 20rem;
+  background-image: url(../assets/images/aboutImages/foto-header.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+}
+
+#cores-por-cima-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #18154891, #0000006e);
+}
+
+#container-conteudo-img-hotel {
+  position: absolute;
+  top: 11rem;
+  left: 5rem;
+  text-align: left;
+}
+
+#nome-pagina {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+#referencia {
+  font-size: 18px;
+}
+
+#referencia-colorida {
+  color: var(--cor-primaria);
+}
+
+#seccao-quarto {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+#container-img-retangulo {
+  margin: auto;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/* swiper */
+.swiper {
+  width: 900px;
+  height: 550px;
+  border: 1px solid black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+#container-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* retangulo-info-imgs */
+
+#container-info-fotos {
+  font-family: 'raleway', sans-serif;
+  border: 0.7px solid lightgray;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 1rem;
+  height: 360px;
+  background-color: white;
+  color: gray;
+  margin: auto;
+}
+
+#sobre-preco-quarto {
+  font-size: 16px;
+  text-align: center;
+  border-left: 1px solid lightgray;
+  padding: 1rem;
+  font-family: 'raleway', sans-serif;
+}
+
+#sobre-preco-quarto #preco-quarto {
+  line-height: 1.6rem;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'raleway', sans-serif;
+}
+
+#container-info-numeros p {
+  font-size: 16px;
+  border-bottom: 0.5px solid lightgray;
+  padding: 0.5rem 1rem;
+  margin-top: 0.3rem;
+  font-weight: bold;
+  font-family: 'raleway', sans-serif;
+}
+
+#container-info-fotos button {
+  padding: 0.7rem 1.2rem;
+  color: white;
+  background-color: rgb(23, 22, 22);
+  border: none;
+  font-weight: bold;
+  font-family: 'raleway', sans-serif;
+}
+
+#container-info-fotos button:hover {
+  background-color: rgb(33, 32, 32);
+  cursor: pointer;
+}
+
+#container-info-help {
+  margin: auto;
+  border: 1px solid lightgray;
+  padding: 7rem 3rem;
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+  position: relative;
+}
+
+#container-info-help > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.fa-circle-question {
+  font-size: 7rem;
+  opacity: 0.1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container-info-help h2 {
+  color: lightgray;
+}
+
+#container-info-help h3 {
+  color: gray;
+}
+
+/* area das informações abaixo*/
+
+.itens-do-quarto {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-transform: uppercase;
+}
+
+#seccao-info-quarto {
+  margin: auto;
+  color: gray;
+  max-width: 1300px;
+  padding: 1rem;
+}
+
+#seccao-info-quarto h2 {
+  margin-bottom: 0.5rem;
+}
+
+.fa-xmark,
+.fa-check {
+  font-size: 20px;
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-xmark {
+  color: red;
+}
+
+#container-todos-itens-quarto {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#container-todos-itens-quarto p {
+  font-family: 'cabin', sans-serif;
+  text-transform: capitalize;
+}
+
+#container-todos-itens-quarto > div {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

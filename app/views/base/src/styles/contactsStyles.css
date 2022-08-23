@@ -1,0 +1,261 @@
+/* main*/
+#container-img-cabecalho {
+  position: relative;
+  height: 20rem;
+  background-image: url(../assets/images/foto-topo-header2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+}
+
+#cores-por-cima-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #18154891, #0000006e);
+}
+
+#container-conteudo-img-hotel {
+  position: absolute;
+  top: 11rem;
+  left: 5rem;
+  text-align: left;
+}
+
+#nome-pagina {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+#referencia {
+  font-size: 18px;
+}
+
+#referencia-colorida {
+  color: var(--cor-primaria);
+}
+
+/* conteudo sobre contactos*/
+
+#conteudo-sobre-contactos {
+  margin-top: 5rem;
+  padding: 0.5rem;
+  padding-left: 4rem;
+  color: lightgray;
+}
+
+@media (max-width: 1102px) {
+  #conteudo-sobre-contactos {
+    text-align: center;
+  }
+}
+
+#conteudo-grande {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+  color: #242424;
+}
+
+#sobre-pequeno {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #494949;
+}
+
+#paragrafo-contactos {
+  text-align: justify;
+  max-width: 580px;
+  color: #757575;
+}
+
+/* Formulário dos contactos*/
+
+#formulario-contactos {
+  margin: auto;
+  margin-top: 3rem;
+}
+
+#formulario-contactos input {
+  padding: 1rem 1.5rem;
+  border: 1px solid #e3e3e3;
+  background-color: var(--cor-secundaria);
+  width: 100%;
+  outline: none;
+}
+
+#formulario-contactos input::placeholder {
+  color: #b2b2b2;
+}
+
+.container-input {
+  margin: auto;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+#container-textarea {
+  margin: auto;
+  max-width: 500px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+@media (max-width: 594px) {
+}
+
+#formulario-contactos textarea {
+  background-color: var(--cor-secundaria);
+  padding: 1rem;
+  border: 1px solid #e3e3e3;
+}
+#formulario-contactos textarea::placeholder {
+  color: #b2b2b2;
+}
+
+#botao-submit {
+  margin: auto;
+  margin-top: 1.5rem;
+  display: block;
+  background-color: var(--cor-primaria);
+  width: 500px;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+}
+
+/* area do mapa , info-contactos, redes sociais  */
+#container-mais-contactos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+/* google map*/
+
+iframe {
+  margin-top: 5rem;
+  max-width: 370px;
+
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 1px 1px 26px -1px #a1a1a133;
+}
+
+/* retangulos com info contactos*/
+
+#area-dos-retangulos-contacto {
+  margin-top: 2rem;
+}
+
+.container-retangulo-contacto {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  gap: 1rem;
+  width: 95%;
+}
+
+.container-retangulo-contacto i {
+  padding: 0.6rem 1rem;
+  background-color: var(--cor-quartenaria);
+  color: var(--cor-terciaria);
+}
+
+.container-retangulo-contacto p {
+  padding: 0.2rem 0.2rem;
+  font-size: 16px;
+  color: var(--cor-terciaria);
+}
+
+/* redes socias*/
+#container-redes-socias {
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+
+  max-width: 300px;
+}
+
+.fa-facebook-f {
+  color: blue;
+}
+.fa-instagram {
+  color: palevioletred;
+}
+.fa-whatsapp {
+  color: green;
+}
+
+#container-redes-socias i {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+}
+
+footer {
+  display: flex;
+  gap: 2rem;
+  justify-content: baseline;
+  justify-content: center;
+  background-color: rgb(245, 243, 243);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  max-width: 300px;
+  color: gray;
+  text-align: justify;
+  font-size: 15px;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  color: gray;
+}
+
+footer #p1 {
+  max-width: 220px;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+footer #p2 {
+  max-width: 250px;
+  text-align: left;
+  line-height: 1.5rem;
+}
+
+.destaque-footer {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.conteudo-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
+
+.container-itens-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
